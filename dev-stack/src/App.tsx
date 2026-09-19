@@ -1,7 +1,11 @@
+import Hero from "./components/Hero";
+import Navbar from "./components/Navbar";
+
 function App() {
   return (
     <>
-      <h1>Dev Stack Project</h1>
+      <Navbar />
+      <Hero />
     </>
   );
 }
