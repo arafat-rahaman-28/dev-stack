@@ -12,7 +12,7 @@ const Navbar = () => {
       </button>
 
       <div className="left-logo">
-        <img className="w-22" src={logo} alt="" />
+        <img className="w-22 md:w-34" src={logo} alt="" />
       </div>
 
       <div className="center-links hidden md:block">
@@ -36,10 +36,8 @@ const Navbar = () => {
       </div>
 
       <div className="right-buttons flex gap-4">
-        <button className="text-[12px] md:text-xl font-semibold">
-          Sign In
-        </button>
-        <button className="bg-[#D91B7E] px-3 md:px-5 py-1.5 text-[12px] md:py-2.5 text-white font-semibold rounded-full md:text-xl">
+        <button className="text-[10px] md:text-xl ">Sign In</button>
+        <button className="bg-[#D91B7E] px-3 md:px-5 py-1.5 text-[10px] md:py-1.5 text-white  rounded-full md:text-xl">
           Sign Up
         </button>
       </div>
