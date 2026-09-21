@@ -3,17 +3,17 @@ const Footer = () => {
   return (
     <footer className="mt-20 py-16 bg-white border-t border-gray-100 pt-12 pb-8 md:container md:mx-auto mt-5 max-w-85 mx-auto">
       <div className="top-section flex justify-between container mx-auto">
-        <div className="left-content max-w-[320px] mx-auto text-[12px] text-center md:text-left">
+        <div className="left-content max-w-[320px] md:max-w-[500px] md:mx-0 mx-auto text-[12px] text-center md:text-left">
           <img
-            className="md:h-[22px] h-[32px] mb-3 mx-auto"
+            className="md:h-[22px] h-[32px] mb-3 mx-auto md:mx-0"
             src={logo}
             alt=""
           />
-          <p className="mb-3 text-[#64748B] md:w-[500px] text-center md:text-left">
+          <p className="mb-3 text-[#64748B] md:w-[380px] text-center md:text-left">
             Curated tools, technologies, and resources for developers building
             modern software.
           </p>
-          <div className="flex gap-3 justify-center text-[#475569] font-semibold text-[12px] text-center">
+          <div className="flex gap-3 md:justify-start justify-center text-[#475569] font-semibold text-[12px] text-center">
             <p>GitHub</p>
             <p>Twitter</p>
             <p>LinkedIn</p>
