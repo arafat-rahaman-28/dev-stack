@@ -1,4 +1,3 @@
-import reactLogo from "../assets/React.png";
 import type { Technology } from "../Types";
 
 type TechCardProps = {
@@ -8,17 +7,26 @@ type TechCardProps = {
 const TechCard = ({ technology }: TechCardProps) => {
   return (
     <div className="w-full max-w-[382px] rounded-[24px] border border-[#E8EEF5] bg-white p-10 shadow-[0_4px_12px_rgba(15,23,42,0.03)]">
-      <div className="flex items-start justify-between">
-        <img className="w-10" src={technology.icon} alt="" />
+      <div className="flex items-center md:items-start justify-between ">
+        <div className="flex gap-3 items-center md:flex-col">
+          <img
+            className="w-12 rounded-xl bg-gray-50 p-2 border border-gray-100"
+            src={technology.icon}
+            alt=""
+          />
+          <h2 className="mt-2 mb-4 text-[18px] font-bold tracking-tight text-[#10182C]">
+            {technology.name}
+          </h2>
+        </div>
 
         <span className="rounded-full border border-[#D6ECFC] bg-[#F0F8FF] px-3 py-1 font-semibold text-[12px] text-[#0099E5]">
           {technology.badge}
         </span>
       </div>
 
-      <h2 className="mt-2 mb-4 text-[18px] font-bold tracking-tight text-[#10182C]">
+      {/* <h2 className="mt-2 mb-4 text-[18px] font-bold tracking-tight text-[#10182C]">
         {technology.name}
-      </h2>
+      </h2> */}
 
       <p className="mt-4 text-[16px] leading-[1.6] text-[#64748B]">
         {technology.description}
