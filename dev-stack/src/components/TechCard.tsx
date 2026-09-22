@@ -26,10 +26,6 @@ const TechCard = ({ technology, onAdd, isAdded }: TechCardProps) => {
         </span>
       </div>
 
-      {/* <h2 className="mt-2 mb-4 text-[18px] font-bold tracking-tight text-[#10182C]">
-        {technology.name}
-      </h2> */}
-
       <p className="mt-4 text-[16px] leading-[1.6] text-[#64748B]">
         {technology.description}
       </p>
@@ -41,18 +37,15 @@ const TechCard = ({ technology, onAdd, isAdded }: TechCardProps) => {
           {technology.category}
         </span>
 
-        {/* Difficulty */}
         <span className="font-medium text-[12px] text-[#64748B]">
           {technology.difficulty}
         </span>
 
-        {/* Rating */}
         <div className="flex items-center gap-2 text-[14px] font-semibold text-[#475569]">
           ⭐<span>{technology.rating}</span>
         </div>
       </div>
 
-      {/* Add to Stack Button */}
       <button
         onClick={() => onAdd(technology)}
         disabled={isAdded}

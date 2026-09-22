@@ -14,9 +14,15 @@ const Footer = () => {
             modern software.
           </p>
           <div className="flex gap-3 md:justify-start justify-center text-[#475569] font-semibold text-[12px] text-center">
-            <p>GitHub</p>
-            <p>Twitter</p>
-            <p>LinkedIn</p>
+            <p>
+              <a href="">Github</a>
+            </p>
+            <p>
+              <a href="">Twitter</a>
+            </p>
+            <p>
+              <a href="">LinkedIn</a>
+            </p>
           </div>
         </div>
         <div className="right-content hidden md:flex justify-between gap-30">
