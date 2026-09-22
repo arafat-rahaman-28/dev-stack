@@ -6,7 +6,7 @@ const Hero = () => {
       <div className="left-content">
         <h1 className="md:mt-0 md:text-5xl md:w-[500px] md:text-left font-bold mt-8 mb-0 text-4xl text-center">
           Build Your Ideal{" "}
-          <span className="bg-gradient-to-r from-orange-500 via-pink-500 to-purple-700 bg-clip-text text-transparent">
+          <span className="brand-gradient bg-clip-text text-transparent">
             Development Stack
           </span>
         </h1>

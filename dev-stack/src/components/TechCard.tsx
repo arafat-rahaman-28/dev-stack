@@ -2,9 +2,11 @@ import type { Technology } from "../Types";
 
 type TechCardProps = {
   technology: Technology;
+  onAdd: (technology: Technology) => void;
+  isAdded: boolean;
 };
 
-const TechCard = ({ technology }: TechCardProps) => {
+const TechCard = ({ technology, onAdd, isAdded }: TechCardProps) => {
   return (
     <div className="w-full max-w-[382px] rounded-[24px] border border-[#E8EEF5] bg-white p-10 shadow-[0_4px_12px_rgba(15,23,42,0.03)]">
       <div className="flex items-center md:items-start justify-between ">
@@ -51,8 +53,14 @@ const TechCard = ({ technology }: TechCardProps) => {
       </div>
 
       {/* Add to Stack Button */}
-      <button className="mt-8 w-full rounded-2xl bg-[#080D1C] py-3 text-[16px] text-white transition-colors duration-200 hover:bg-[#1A2338]">
-        Add to Stack
+      <button
+        onClick={() => onAdd(technology)}
+        disabled={isAdded}
+        className={`mt-8 w-full rounded-2xl bg-[#080D1C] py-3 text-[16px] text-white transition-colors duration-200   ${
+          isAdded ? "cursor-not-allowed bg-gray-400" : "bg-[#080D1C] "
+        }`}
+      >
+        {isAdded ? "✅ Added to Stack" : "Add to Stack"}
       </button>
     </div>
   );
