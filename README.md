@@ -1,31 +1,46 @@
-## 🛠️ Technologies & Tools Used
+# 🚀 Project Name
 
-- React.js
-- Tailwind CSS
-- React-Toastify 
-- TypeScript
+> A short and clear one-line description of what this project does.
 
-## React Concepts and Conceptual Answers
+[![Live Demo](https://img.shields.io/badge/Live-Demo-000?style=for-the-badge&logo=vercel&logoColor=white)](https://dazzling-lily-bba693.netlify.app/)
+[![GitHub](https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/arafat-rahaman-28/dev-stack.git)
+
 ---
-## 1. What is JSX, and why is it used in React? 
-JSX is JavaScript XML. It is similar to HTML, but we can write it inside JavaScript and make UI easily.
 
-## 2. What is the difference between props and state?
-Props is something similar like argument, we can send it from parent to the child component. And it is read-only state. State is something that changes it's state depending on the component and re-renders it. 
+<!-- ## 📸 Preview -->
 
-## 3. What does the useState hook do, and where did you use it in this project? 
-useSate basically provides me with a variable and a function that helps me to update. Here are two examples where I used useState hook: ```const [technologies, setTechnologies] = useState<Technology[]>([]);``` and ```const [isLoading, setIsLoading] = useState(true);``` 
+<!-- Add your project screenshot here -->
 
-## 4. What does the useEffect hook do, and why did you need it to load the JSON data?
-useEffect hooks helps to call API and fetch data. I needed to load JSON data so that i can seperate the data of the cards from the main code of mine
+<!-- ![Project Preview](YOUR_SCREENSHOT_URL) -->
 
-## 5. Why does every item in a .map() list need a unique key prop? 
-This unique key helps react to keep track of which item is getting changed, otherwise it gets confused and gives warnings in the console.
+---
 
-## 6. What is conditional rending er? Show one place you used it.
-Conditional rendering means showing different UI based on diefferent conditions. For example in my project: 
-```{isAdded ? "✅ Added to Stack" : "Add to Stack"}```
-Here based on the value of ```isAdded``` it will render a message. 
+## 📖 Overview
 
-## 7. How do you pass data from a parent component to a child component, and how does a child send something back to the parent?
-To pass data from parent to child, we use props. But a child cannot send data back to the parent with props. We have to send a function as props to the child, and the child calls the function with data; that's how the child sends data back to the parent.
+**DevStack** is a modern and responsive developer-focused web application designed to showcase development projects, technologies, and useful resources in a clean and interactive interface.
+
+The project focuses on creating a simple yet engaging experience for developers to explore different technologies, view projects, and discover useful development resources.
+
+It was built as a practical project to improve my frontend development skills, particularly in building reusable components, responsive layouts, and interactive user interfaces.
+
+---
+
+## ✨ Features
+
+- 🧑‍💻 Developer-focused interface
+- 🛠️ Technology showcase
+- 📂 Project showcase
+- 🔍 Easy navigation
+- 📱 Fully responsive design
+- 🎨 Clean and modern UI
+- ⚡ Fast and interactive user experience
+- 🧩 Reusable React components
+
+---
+
+## 🛠️ Technologies Used
+
+<p align="left">
+  <img src="https://skillicons.dev/icons?i=react,js,tailwind,vite,git,github" />
+</p>
+
